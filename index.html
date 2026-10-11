@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knox Mod - FF Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="panel-container">
+        
+        <!-- Header -->
+        <header class="knox-header">
+            <div class="logo">
+                <i class="fas fa-crosshairs"></i> KNOX MOD
+            </div>
+            <div class="status-badge" id="mod-status">OFFLINE</div>
+        </header>
+
+        <!-- Main Control Area -->
+        <main class="control-center">
+            
+            <!-- Headshot Toggle Card -->
+            <section class="card headshot-card">
+                <h2><i class="fas fa-bullseye"></i> Headshot Mode</h2>
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="headshot-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label" id="toggle-text">Disabled</span>
+                </div>
+                <p class="description">Automatically targets head zone for maximum damage.</p>
+            </section>
+
+            <!-- Stats Dashboard -->
+            <section class="card stats-card">
+                <h3><i class="fas fa-chart-line"></i> Live Match Stats</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value" id="hs-count">0</span>
+                        <span class="stat-label">Headshots</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="accuracy">0%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="fps">60</span>
+                        <span class="stat-label">FPS Boost</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sensitivity Control -->
+            <section class="card settings-card">
+                <h3><i class="fas fa-sliders-h"></i> Aim Assist Sensitivity</h3>
+                <div class="slider-group">
+                    <label>Headshot Precision</label>
+                    <input type="range" min="1" max="100" value="75" id="sensitivity-slider">
+                    <span id="sensitivity-value">75%</span>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="knox-footer">
+            <p>v2.0 | Server: Asia | Ping: 24ms</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
